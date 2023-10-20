@@ -14,7 +14,7 @@ import FarmScreen from '../screens/FarmScreen';
 const homeName = "Home";
 const FarmName = "Farm";
 const ScanName = "Scan";
-const cashflowName = "Cashflow";
+const cashflowName = "Cash Flow";
 const AccountName = "Account";
 
 const Tab = createBottomTabNavigator();
@@ -81,6 +81,7 @@ export default function Navigation() {
           options={{
             tabBarActiveTintColor: 'green', 
             tabBarInactiveTintColor: '#19a337',
+            headerShown: false,
           }}
         />
         <Tab.Screen
@@ -89,6 +90,7 @@ export default function Navigation() {
           options={{
             tabBarActiveTintColor: 'green', 
             tabBarInactiveTintColor: '#19a337', 
+            headerShown: false,
           }}
         />
         <Tab.Screen
@@ -97,6 +99,7 @@ export default function Navigation() {
           options={{
             tabBarActiveTintColor: 'green', 
             tabBarInactiveTintColor: '#19a337', 
+            headerShown: false,
           }}
         />
         <Tab.Screen
@@ -104,7 +107,8 @@ export default function Navigation() {
           component={CashflowScreen}
           options={{
             tabBarActiveTintColor: 'green', 
-            tabBarInactiveTintColor: '#19a337', 
+            tabBarInactiveTintColor: '#19a337',
+            headerShown: false, 
           }}
         />
         <Tab.Screen
@@ -113,6 +117,7 @@ export default function Navigation() {
           options={{
             tabBarActiveTintColor: 'green', 
             tabBarInactiveTintColor: '#19a337', 
+            headerShown: false,
           }}
         />
       </Tab.Navigator>
